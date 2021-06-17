@@ -1,0 +1,65 @@
+@import "header";
+@import "about";
+@import "themenu";
+@import "map";
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inconsolata", sans-serif;;
+}
+
+.cafe_cont{
+    width: 100%;
+    background-image: url("../image/coffeehouse.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    color: blanchedalmond;
+    text-align: center;
+    position: relative;
+    h1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 60px;
+        font-weight: 400;
+    }
+    span {
+        position: absolute;
+        bottom: 20px;
+        color: #fff;
+    }
+    .left_span {
+        left: 20px;
+        display: inline-block;
+        padding: 5px;
+        background-color: #000;
+    }
+    .right_span {
+        right: 20px;
+    }
+}
+
+.footer{
+    width: 100%;
+    background-color: rgb(219, 219, 219);
+    text-align: center;
+    margin-top: 20px;
+    p{
+        font-size: 17px;
+        color: black;
+        padding: 30px;
+        a{
+            text-decoration: none;
+            color: black;
+            &:hover{
+                color: green;
+            }
+        }
+    }
+}
